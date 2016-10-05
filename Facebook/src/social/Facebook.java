@@ -120,12 +120,10 @@ public class Facebook {
 				{
 					for(Utente a: u.getAmici())
 					{
-						if(a.getNome().equals(nome) && a.getCognome().equals(cognome)|| v.getAmici().contains(a)|| ListaAmiciDiAmici.contains(a) )
+						if(!a.getNome().equals(nome) &&!a.getCognome().equals(cognome)|| !v.getAmici().contains(a)|| !ListaAmiciDiAmici.contains(a) )
 						{
-						continue;
-						}
-						else
-						{
+						
+						
 //							str= str + a.getNome()+ " " + a.getCognome() + " \n";
 							ListaAmiciDiAmici.add(a);
 						}
